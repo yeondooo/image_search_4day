@@ -1,5 +1,5 @@
-import 'package:image_search_4day/data/model/photo.dart';
-import 'package:image_search_4day/dto/pixabay_result_dto.dart';
+import 'package:image_search_4day/data/dto/pixabay_result_dto.dart';
+import 'package:image_search_4day/domain/model/photo.dart';
 
 extension ToPhoto on Hits {
   Photo toPhoto() {
