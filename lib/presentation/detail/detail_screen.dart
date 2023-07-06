@@ -10,14 +10,22 @@ class DetailScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('디테일 페이지'),
+        title: Text('조회수: ${photo.views}회'),
       ),
-      body: Hero(
-        tag: photo.id,
-        child: Image.network(
-          photo.webformatURL,
-          fit: BoxFit.cover,
-        ),
+      body: Column(
+        children: [
+          Hero(
+            tag: photo.id,
+            child: Image.network(
+              photo.webformatURL,
+              fit: BoxFit.cover,
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.symmetric(vertical: 8.0),
+            child: Text('키워드: ${photo.tags}'),
+          ),
+        ],
       ),
     );
   }
