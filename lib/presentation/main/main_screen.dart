@@ -36,7 +36,7 @@ class _MainScreenState extends State<MainScreen> {
               TextField(
                 controller: controller,
                 decoration: InputDecoration(
-                  hintText: '이미지를 입력하세요',
+                  hintText: '검색어를 입력하세요',
                   suffixIcon: IconButton(
                     icon: const Icon(Icons.search),
                     onPressed: () {
