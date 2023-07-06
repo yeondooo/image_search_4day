@@ -7,6 +7,7 @@ extension ToPhoto on Hits {
       id: id ?? 0,
       webformatURL: webformatURL ?? '',
       views: views ?? 0,
+      tags: tags ?? '',
     );
   }
 }
